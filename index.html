@@ -1,592 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mukesh Prajapat Website Developer | Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mukesh Prajapat Website Developer | Portfolio</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="/assets/css/style.css" rel="stylesheet">
-</head>
+        <link href="/assets/css/style.css" rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
-<!-- Header / Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-    <div class="container">
+        <!-- Header / Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand fw-bold fs-4" href="#">
-            Mukesh Prajapat
-        </a>
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold fs-4" href="#">
+                    Mukesh Prajapat
+                </a>
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
 
-                <!-- Hire Button -->
-                <li class="nav-item ms-lg-3">
-                    <a href="#contact" class="btn btn-primary btn-sm px-3">
-                        Hire Me
-                    </a>
-                </li>
+                        <!-- Hire Button -->
+                        <li class="nav-item dropdown ms-lg-3">
+                            <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Hire Me
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="YOUR_UPWORK_LINK" target="_blank">
+                                        Upwork Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="YOUR_FREELANCER_LINK" target="_blank">
+                                        Freelancer Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <!-- Left Content -->
-            <div class="col-lg-6 text-lg-start text-center">
-                <h1 class="display-4 fw-bold">
-                    Laravel & Shopify Developer
-                    <br>Building Scalable Web Solutions
-                </h1>
-
-                <p class="lead mt-4">
-                    I help startups, agencies, and global businesses build
-                    high-performance web applications, eCommerce platforms,
-                    and secure API integrations.
-                </p>
-
-                <div class="mt-4">
-                    <span class="badge bg-light text-dark me-2 p-2">Laravel 9+</span>
-                    <span class="badge bg-light text-dark me-2 p-2">Shopify Expert</span>
-                    <span class="badge bg-light text-dark me-2 p-2">WordPress</span>
-                    <span class="badge bg-light text-dark me-2 p-2">API Integration</span>
-                </div>
-
-                <div class="mt-5">
-                    <a href="#portfolio" class="btn btn-light btn-lg me-3">
-                        View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">
-                        Hire Me
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Image -->
-            <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                <img src="/assets/images/hero-banner.jpg"
-                     class="img-fluid rounded shadow-lg"
-                     alt="Developer Working on Laptop">
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- About -->
-<section id="about" class="section-padding bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            
-            <!-- Left Content -->
-            <div class="col-lg-6">
-                <h2 class="mb-4 fw-bold">About Me</h2>
-                <p class="lead">
-                    I'm Mukesh Prajapat, a Full-Stack Developer specializing in 
-                    Laravel, Shopify, WordPress, and API integrations.
-                </p>
-
-                <p>
-                    I help startups, agencies, and business owners transform their ideas 
-                    into scalable, secure, and high-performing web applications. 
-                    From custom Laravel systems to high-converting Shopify stores, 
-                    I focus on clean architecture, performance optimization, and 
-                    long-term maintainability.
-                </p>
-
-                <p>
-                    My goal is simple — build reliable digital solutions that 
-                    help businesses grow faster and operate smarter.
-                </p>
-
-                <div class="mt-4">
-                    <a href="#portfolio" class="btn btn-primary me-3">
-                        View My Projects
-                    </a>
-                    <a href="#contact" class="btn btn-outline-dark">
-                        Let's Work Together
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Stats -->
-            <div class="col-lg-6 mt-5 mt-lg-0">
-                <div class="row text-center">
-                    <div class="col-6 mb-4">
-                        <h3 class="fw-bold text-primary">3+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="col-6 mb-4">
-                        <h3 class="fw-bold text-primary">20+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="col-6">
-                        <h3 class="fw-bold text-primary">Global</h3>
-                        <p>Client Reach</p>
-                    </div>
-                    <div class="col-6">
-                        <h3 class="fw-bold text-primary">100%</h3>
-                        <p>Commitment</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Me -->
-<section class="section-padding">
-    <div class="container text-center">
-        <h2 class="mb-5 fw-bold">Why Choose Me</h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="p-4 shadow-sm rounded h-100">
-                    <i class="bi bi-lightning-charge fs-1 text-primary"></i>
-                    <h5 class="mt-3">Fast & Reliable Delivery</h5>
-                    <p>
-                        I focus on delivering clean, scalable solutions on time 
-                        without compromising quality.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="p-4 shadow-sm rounded h-100">
-                    <i class="bi bi-code-slash fs-1 text-success"></i>
-                    <h5 class="mt-3">Clean & Maintainable Code</h5>
-                    <p>
-                        Well-structured architecture using Laravel best practices 
-                        for long-term scalability.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="p-4 shadow-sm rounded h-100">
-                    <i class="bi bi-globe fs-1 text-danger"></i>
-                    <h5 class="mt-3">Global Client Experience</h5>
-                    <p>
-                        Experience working with international clients and 
-                        remote teams across different industries.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Services -->
-<section id="services" class="section-padding">
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Services I Offer</h2>
-            <p class="text-muted">
-                High-performance web solutions tailored for startups, agencies, and growing businesses.
-            </p>
-        </div>
-
-        <div class="row g-4">
-
-            <!-- Service 1 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100 p-4 service-card">
-                    <i class="bi bi-code-slash fs-1 text-primary"></i>
-                    <h5 class="mt-3 fw-bold">Custom Laravel Development</h5>
-                    <p>
-                        Scalable web applications, admin panels, CRM systems, 
-                        and custom backend solutions built with clean architecture.
-                    </p>
-                    <ul class="small">
-                        <li>Multi-role authentication</li>
-                        <li>REST API development</li>
-                        <li>Payment gateway integration</li>
-                        <li>Performance optimization</li>
                     </ul>
                 </div>
             </div>
+        </nav>
 
-            <!-- Service 2 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100 p-4 service-card">
-                    <i class="bi bi-cart-check fs-1 text-success"></i>
-                    <h5 class="mt-3 fw-bold">Shopify & eCommerce Solutions</h5>
-                    <p>
-                        High-converting Shopify stores and automation systems 
-                        tailored for online businesses.
-                    </p>
-                    <ul class="small">
-                        <li>Custom theme customization</li>
-                        <li>App & API integrations</li>
-                        <li>Checkout optimization</li>
-                        <li>Order workflow automation</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
 
-            <!-- Service 3 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100 p-4 service-card">
-                    <i class="bi bi-shield-check fs-1 text-danger"></i>
-                    <h5 class="mt-3 fw-bold">API & System Integration</h5>
-                    <p>
-                        Secure API integrations and automation workflows 
-                        to connect your business tools seamlessly.
-                    </p>
-                    <ul class="small">
-                        <li>Third-party API integration</li>
-                        <li>CRM automation (Zapier, Twilio)</li>
-                        <li>Webhook & cron jobs</li>
-                        <li>Secure authentication systems</li>
-                    </ul>
-                </div>
-            </div>
+                    <!-- Left Content -->
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <h1 class="display-4 fw-bold">
+                            Laravel & Shopify Developer
+                            <br>Building Scalable Web Solutions
+                        </h1>
 
-        </div>
-
-        <div class="text-center mt-5">
-            <a href="#contact" class="btn btn-primary btn-lg">
-                Discuss Your Project
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- Portfolio -->
-<section id="portfolio" class="section-padding bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Featured Projects</h2>
-            <p class="text-muted">
-                Real-world solutions built using Laravel, Shopify & API integrations.
-            </p>
-        </div>
-
-        <div class="row g-4">
-
-            <!-- Project 1 -->
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100">
-                    <img src="/assets/images/mypetprints.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">
-                            MyPetPrints Automation System
-                        </h5>
-
-                        <p>
-                            Built an automated artwork approval workflow system 
-                            integrating Shopify, PHP backend, and Trello API 
-                            with cron-based reminders and escalation logic.
+                        <p class="lead mt-4">
+                            I help startups, agencies, and global businesses build
+                            high-performance web applications, eCommerce platforms,
+                            and secure API integrations.
                         </p>
 
-                        <ul>
-                            <li>Reduced manual workload</li>
-                            <li>Automated client follow-ups</li>
-                            <li>Improved approval turnaround time</li>
-                        </ul>
-
-                        <div class="mt-3">
-                            <span class="badge bg-primary">Shopify</span>
-                            <span class="badge bg-dark">PHP</span>
-                            <span class="badge bg-success">Trello API</span>
-                            <span class="badge bg-secondary">Automation</span>
+                        <div class="mt-4">
+                            <span class="badge bg-light text-dark me-2 p-2">Laravel 9+</span>
+                            <span class="badge bg-light text-dark me-2 p-2">Shopify Expert</span>
+                            <span class="badge bg-light text-dark me-2 p-2">WordPress</span>
+                            <span class="badge bg-light text-dark me-2 p-2">API Integration</span>
                         </div>
 
-                        <div class="mt-4">
-                            <a href="projects/mypetprints.html" class="btn btn-primary btn-sm">
-                                View Case Study
+                        <div class="mt-5">
+                            <a href="#portfolio" class="btn btn-light btn-lg me-3">
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                Hire Me
                             </a>
                         </div>
                     </div>
+
+                    <!-- Right Image -->
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <img src="/assets/images/hero-banner.jpg"
+                            class="img-fluid rounded shadow-lg"
+                            alt="Developer Working on Laptop">
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2 -->
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100">
-                    <img src="/assets/images/coming-soon.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">
-                            Custom Laravel Booking System
-                        </h5>
-
-                        <p>
-                            Developed a multi-role booking platform with 
-                            authentication, role management, and REST API integration.
+        <!-- About -->
+        <section id="about" class="section-padding bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    
+                    <!-- Left Content -->
+                    <div class="col-lg-6">
+                        <h2 class="mb-4 fw-bold">About Me</h2>
+                        <p class="lead">
+                            I'm Mukesh Prajapat, a Full-Stack Developer specializing in 
+                            Laravel, Shopify, WordPress, and API integrations.
                         </p>
 
-                        <ul>
-                            <li>Role-based access control</li>
-                            <li>Secure API authentication</li>
-                            <li>Optimized database structure</li>
-                        </ul>
+                        <p>
+                            I help startups, agencies, and business owners transform their ideas 
+                            into scalable, secure, and high-performing web applications. 
+                            From custom Laravel systems to high-converting Shopify stores, 
+                            I focus on clean architecture, performance optimization, and 
+                            long-term maintainability.
+                        </p>
 
-                        <div class="mt-3">
-                            <span class="badge bg-primary">Laravel 9</span>
-                            <span class="badge bg-dark">MySQL</span>
-                            <span class="badge bg-success">REST API</span>
+                        <p>
+                            My goal is simple — build reliable digital solutions that 
+                            help businesses grow faster and operate smarter.
+                        </p>
+
+                        <div class="mt-4">
+                            <a href="#portfolio" class="btn btn-primary me-3">
+                                View My Projects
+                            </a>
+                            <a href="#contact" class="btn btn-outline-dark">
+                                Let's Work Together
+                            </a>
                         </div>
                     </div>
+
+                    <!-- Right Stats -->
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div class="row text-center">
+                            <div class="col-6 mb-4">
+                                <h3 class="fw-bold text-primary">3+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <h3 class="fw-bold text-primary">20+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="col-6">
+                                <h3 class="fw-bold text-primary">Global</h3>
+                                <p>Client Reach</p>
+                            </div>
+                            <div class="col-6">
+                                <h3 class="fw-bold text-primary">100%</h3>
+                                <p>Commitment</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Why Choose Me -->
+        <section class="section-padding">
+            <div class="container text-center">
+                <h2 class="mb-5 fw-bold">Why Choose Me</h2>
 
-        <div class="text-center mt-5">
-            <a href="#contact" class="btn btn-dark btn-lg">
-                Have a Project in Mind? Let's Talk
-            </a>
-        </div>
-    </div>
-</section>
+                <div class="row g-4">
 
-<!-- Testimonials -->
-<section class="section-padding bg-light">
-    <div class="container">
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm rounded h-100">
+                            <i class="bi bi-lightning-charge fs-1 text-primary"></i>
+                            <h5 class="mt-3">Fast & Reliable Delivery</h5>
+                            <p>
+                                I focus on delivering clean, scalable solutions on time 
+                                without compromising quality.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">What Clients Say</h2>
-            <p class="text-muted">
-                Feedback from business owners and project collaborations.
-            </p>
-        </div>
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm rounded h-100">
+                            <i class="bi bi-code-slash fs-1 text-success"></i>
+                            <h5 class="mt-3">Clean & Maintainable Code</h5>
+                            <p>
+                                Well-structured architecture using Laravel best practices 
+                                for long-term scalability.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm rounded h-100">
+                            <i class="bi bi-globe fs-1 text-danger"></i>
+                            <h5 class="mt-3">Global Client Experience</h5>
+                            <p>
+                                Experience working with international clients and 
+                                remote teams across different industries.
+                            </p>
+                        </div>
+                    </div>
 
-            <!-- Testimonial 1 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm p-4 h-100">
-                    <p>
-                        "Mukesh delivered our Shopify automation system perfectly. 
-                        The workflow reduced manual effort and improved approval speed significantly."
-                    </p>
-                    <h6 class="fw-bold mt-3 mb-0">— eCommerce Store Owner</h6>
-                    <small class="text-muted">Shopify Automation Project</small>
                 </div>
             </div>
+        </section>
 
-            <!-- Testimonial 2 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm p-4 h-100">
-                    <p>
-                        "Professional, responsive, and technically strong in Laravel. 
-                        The API integration was smooth and secure."
+        <!-- Services -->
+        <section id="services" class="section-padding">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Services I Offer</h2>
+                    <p class="text-muted">
+                        High-performance web solutions tailored for startups, agencies, and growing businesses.
                     </p>
-                    <h6 class="fw-bold mt-3 mb-0">— Startup Founder</h6>
-                    <small class="text-muted">Custom Laravel Development</small>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Service 1 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100 p-4 service-card">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h5 class="mt-3 fw-bold">Custom Laravel Development</h5>
+                            <p>
+                                Scalable web applications, admin panels, CRM systems, 
+                                and custom backend solutions built with clean architecture.
+                            </p>
+                            <ul class="small">
+                                <li>Multi-role authentication</li>
+                                <li>REST API development</li>
+                                <li>Payment gateway integration</li>
+                                <li>Performance optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100 p-4 service-card">
+                            <i class="bi bi-cart-check fs-1 text-success"></i>
+                            <h5 class="mt-3 fw-bold">Shopify & eCommerce Solutions</h5>
+                            <p>
+                                High-converting Shopify stores and automation systems 
+                                tailored for online businesses.
+                            </p>
+                            <ul class="small">
+                                <li>Custom theme customization</li>
+                                <li>App & API integrations</li>
+                                <li>Checkout optimization</li>
+                                <li>Order workflow automation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100 p-4 service-card">
+                            <i class="bi bi-shield-check fs-1 text-danger"></i>
+                            <h5 class="mt-3 fw-bold">API & System Integration</h5>
+                            <p>
+                                Secure API integrations and automation workflows 
+                                to connect your business tools seamlessly.
+                            </p>
+                            <ul class="small">
+                                <li>Third-party API integration</li>
+                                <li>CRM automation (Zapier, Twilio)</li>
+                                <li>Webhook & cron jobs</li>
+                                <li>Secure authentication systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Discuss Your Project
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Featured Projects</h2>
+                    <p class="text-muted">
+                        Real-world solutions built using Laravel, Shopify & API integrations.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Project 1 -->
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <img src="/assets/images/mypetprints.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    MyPetPrints Automation System
+                                </h5>
+
+                                <p>
+                                    Built an automated artwork approval workflow system 
+                                    integrating Shopify, PHP backend, and Trello API 
+                                    with cron-based reminders and escalation logic.
+                                </p>
+
+                                <ul>
+                                    <li>Reduced manual workload</li>
+                                    <li>Automated client follow-ups</li>
+                                    <li>Improved approval turnaround time</li>
+                                </ul>
+
+                                <div class="mt-3">
+                                    <span class="badge bg-primary">Shopify</span>
+                                    <span class="badge bg-dark">PHP</span>
+                                    <span class="badge bg-success">Trello API</span>
+                                    <span class="badge bg-secondary">Automation</span>
+                                </div>
+
+                                <div class="mt-4">
+                                    <a href="projects/mypetprints.html" class="btn btn-primary btn-sm">
+                                        View Case Study
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <img src="/assets/images/coming-soon.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Custom Laravel Booking System
+                                </h5>
+
+                                <p>
+                                    Developed a multi-role booking platform with 
+                                    authentication, role management, and REST API integration.
+                                </p>
+
+                                <ul>
+                                    <li>Role-based access control</li>
+                                    <li>Secure API authentication</li>
+                                    <li>Optimized database structure</li>
+                                </ul>
+
+                                <div class="mt-3">
+                                    <span class="badge bg-primary">Laravel 9</span>
+                                    <span class="badge bg-dark">MySQL</span>
+                                    <span class="badge bg-success">REST API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-dark btn-lg">
+                        Have a Project in Mind? Let's Talk
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Testimonial 3 -->
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm p-4 h-100">
-                    <p>
-                        "Great communication and on-time delivery. 
-                        Highly recommended for backend and automation systems."
+        <!-- Testimonials -->
+        <section class="section-padding bg-light">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">What Clients Say</h2>
+                    <p class="text-muted">
+                        Feedback from business owners and project collaborations.
                     </p>
-                    <h6 class="fw-bold mt-3 mb-0">— Agency Partner</h6>
-                    <small class="text-muted">API & Backend Systems</small>
                 </div>
+
+                <div class="row g-4">
+
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <p>
+                                "Mukesh delivered our Shopify automation system perfectly. 
+                                The workflow reduced manual effort and improved approval speed significantly."
+                            </p>
+                            <h6 class="fw-bold mt-3 mb-0">— eCommerce Store Owner</h6>
+                            <small class="text-muted">Shopify Automation Project</small>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <p>
+                                "Professional, responsive, and technically strong in Laravel. 
+                                The API integration was smooth and secure."
+                            </p>
+                            <h6 class="fw-bold mt-3 mb-0">— Startup Founder</h6>
+                            <small class="text-muted">Custom Laravel Development</small>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <p>
+                                "Great communication and on-time delivery. 
+                                Highly recommended for backend and automation systems."
+                            </p>
+                            <h6 class="fw-bold mt-3 mb-0">— Agency Partner</h6>
+                            <small class="text-muted">API & Backend Systems</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-dark btn-lg">
+                        Start Your Project Today
+                    </a>
+                </div>
+
             </div>
+        </section>
 
-        </div>
+        <!-- Contact -->
+        <section id="contact" class="section-padding">
+            <div class="container">
 
-        <div class="text-center mt-5">
-            <a href="#contact" class="btn btn-dark btn-lg">
-                Start Your Project Today
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section-padding">
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Let's Work Together</h2>
-            <p class="text-muted">
-                Have a project in mind? Let’s build something amazing.
-            </p>
-        </div>
-
-        <div class="row align-items-center">
-
-            <!-- Contact Info -->
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <div class="p-4 shadow-sm rounded bg-light h-100">
-                    <h5 class="fw-bold mb-4">Contact Information</h5>
-
-                    <p>
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        your-email@example.com
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Let's Work Together</h2>
+                    <p class="text-muted">
+                        Have a project in mind? Let’s build something amazing.
                     </p>
+                </div>
 
-                    <p>
-                        <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-                        India | Available for Global Remote Projects
-                    </p>
+                <div class="row align-items-center">
 
-                    <p>
-                        <i class="bi bi-clock-fill text-success me-2"></i>
-                        Response Time: Within 24 Hours
-                    </p>
+                    <!-- Contact Info -->
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="p-4 shadow-sm rounded bg-light h-100">
+                            <h5 class="fw-bold mb-4">Contact Information</h5>
 
-                    <div class="mt-4">
-                        <a href="https://www.linkedin.com/" target="_blank" class="me-3 fs-4 text-dark">
+                            <p>
+                                <a href="mailto:developer.expert.026@gmail.com">
+                                    <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                    developer.expert.026@gmail.com
+                                </a>
+                            </p>
+
+                            <p>
+                                <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+                                India | Available for Global Remote Projects
+                            </p>
+
+                            <p>
+                                <i class="bi bi-clock-fill text-success me-2"></i>
+                                Response Time: Within 24 Hours
+                            </p>
+
+                            <div class="mt-4">
+                                <a href="https://linkedin.com/in/mukesh-k-prajapat" target="_blank" class="me-3 fs-4 text-dark">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/mukeshprajapat026" target="_blank" class="me-3 fs-4 text-dark">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.upwork.com/freelancers/mukeshkumarp2" target="_blank" class="fs-4 text-dark">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="p-4 shadow-sm rounded bg-white">
+                            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" name="subject" class="form-control" placeholder="Project Type (Laravel, Shopify, API, etc)">
+                                </div>
+
+                                <div class="mb-3">
+                                    <textarea name="message" rows="5" class="form-control" placeholder="Tell me about your project..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                    Send Message
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-4 mb-4">
+                        <h5 class="fw-bold">Mukesh Prajapat</h5>
+                        <p>
+                            Full-Stack Developer specializing in Laravel, Shopify,
+                            WordPress, and API integrations.
+                            Building scalable web solutions for global clients.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 mb-4">
+                        <h5 class="fw-bold">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                            <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+                            <li><a href="#portfolio" class="text-light text-decoration-none">Portfolio</a></li>
+                            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="col-lg-4 mb-4">
+                        <h5 class="fw-bold">Connect With Me</h5>
+
+                        <a href="https://linkedin.com/in/mukesh-k-prajapat" target="_blank" class="text-light me-3 fs-4">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://github.com/" target="_blank" class="me-3 fs-4 text-dark">
+
+                        <a href="https://github.com/mukeshprajapat026" target="_blank" class="text-light me-3 fs-4">
                             <i class="bi bi-github"></i>
                         </a>
-                        <a href="https://www.upwork.com/" target="_blank" class="fs-4 text-dark">
+
+                        <a href="https://www.upwork.com/freelancers/mukeshkumarp2" target="_blank" class="text-light fs-4">
                             <i class="bi bi-briefcase-fill"></i>
                         </a>
+
+                        <a href="https://www.freelancer.com/u/mukesh459" target="_blank" class="text-light fs-4">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </a>
+
+                        <p class="mt-3 mb-0">
+                            📧 <a href="mailto:developer.expert.026@gmail.com">developer.expert.026@gmail.com</a>
+                        </p>
                     </div>
+
                 </div>
-            </div>
 
-            <!-- Contact Form -->
-            <div class="col-lg-7">
-                <div class="p-4 shadow-sm rounded bg-white">
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <hr class="border-secondary">
 
-                        <div class="mb-3">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" name="subject" class="form-control" placeholder="Project Type (Laravel, Shopify, API, etc)">
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea name="message" rows="5" class="form-control" placeholder="Tell me about your project..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100 btn-lg">
-                            Send Message
-                        </button>
-
-                    </form>
+                <div class="text-center">
+                    <p class="mb-0">
+                        © 2026 Mukesh Prajapat | All Rights Reserved
+                    </p>
                 </div>
+
             </div>
+        </footer>
 
-        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-light pt-5 pb-4">
-    <div class="container">
-
-        <div class="row">
-
-            <!-- About -->
-            <div class="col-lg-4 mb-4">
-                <h5 class="fw-bold">Mukesh Prajapat</h5>
-                <p>
-                    Full-Stack Developer specializing in Laravel, Shopify,
-                    WordPress, and API integrations.
-                    Building scalable web solutions for global clients.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-4 mb-4">
-                <h5 class="fw-bold">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#about" class="text-light text-decoration-none">About</a></li>
-                    <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
-                    <li><a href="#portfolio" class="text-light text-decoration-none">Portfolio</a></li>
-                    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Social -->
-            <div class="col-lg-4 mb-4">
-                <h5 class="fw-bold">Connect With Me</h5>
-
-                <a href="https://www.linkedin.com/" target="_blank" class="text-light me-3 fs-4">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-
-                <a href="https://github.com/" target="_blank" class="text-light me-3 fs-4">
-                    <i class="bi bi-github"></i>
-                </a>
-
-                <a href="https://www.upwork.com/" target="_blank" class="text-light fs-4">
-                    <i class="bi bi-briefcase-fill"></i>
-                </a>
-
-                <p class="mt-3 mb-0">
-                    📧 your-email@example.com
-                </p>
-            </div>
-
-        </div>
-
-        <hr class="border-secondary">
-
-        <div class="text-center">
-            <p class="mb-0">
-                © 2026 Mukesh Prajapat | All Rights Reserved
-            </p>
-        </div>
-
-    </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    </body>
 </html>
