@@ -1,123 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyPetPrints – Artwork Approval Automation System</title>
-  <style>
-    :root { --bg:#0b1220; --card:#111a2e; --text:#e9eefc; --muted:#b7c3e6; --accent:#4ea1ff; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:linear-gradient(180deg,#060a14, var(--bg)); color:var(--text); }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 18px 60px; }
-    .top a { color: var(--muted); text-decoration: none; }
-    .hero { margin-top: 18px; background: radial-gradient(1200px 500px at 10% 0%, rgba(78,161,255,.22), transparent 55%),
-                                   radial-gradient(900px 500px at 90% 10%, rgba(108,92,231,.18), transparent 55%),
-                                   var(--card);
-            border:1px solid rgba(255,255,255,.08);
-            border-radius: 18px; padding: 26px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
-    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: .2px; }
-    .sub { color: var(--muted); line-height: 1.55; margin: 0 0 18px; }
-    .badges { display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0 18px; }
-    .badge { font-size: 13px; color: #d8e6ff; background: rgba(78,161,255,.14); border: 1px solid rgba(78,161,255,.25);
-             padding: 6px 10px; border-radius: 999px; }
-    .grid { display:grid; gap:16px; grid-template-columns: 1fr; margin-top: 16px; }
-    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .card { background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 18px; }
-    h2 { font-size: 16px; margin:0 0 10px; }
-    ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.65; }
-    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top: 18px; }
-    .btn { display:inline-block; padding: 10px 14px; border-radius: 12px; background: rgba(78,161,255,.16);
-           border:1px solid rgba(78,161,255,.30); color: var(--text); text-decoration: none; font-weight: 600; }
-    .btn:hover { background: rgba(78,161,255,.22); }
-    .muted { color: var(--muted); }
-    .footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
-    code { background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 8px; }
-  </style>
+    <meta charset="UTF-8">
+    <title>MyPetPrints Case Study | Mukesh Prajapat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="top">
-      <a href="../index.html">← Back to Portfolio</a>
+
+<!-- Header Include -->
+<div id="header"></div>
+
+<!-- Page Hero -->
+<section class="section-padding bg-light mt-5 pt-5">
+    <div class="container">
+
+        <a href="/index.html#portfolio" class="text-decoration-none">
+            ← Back to Portfolio
+        </a>
+
+        <div class="mt-4">
+            <h1 class="fw-bold">
+                MyPetPrints – Artwork Approval Automation System
+            </h1>
+
+            <p class="lead text-muted mt-3">
+                Automated Shopify artwork approval workflow integrating PHP backend,
+                Trello API, webhooks, cron jobs, and email automation.
+            </p>
+
+            <div class="mt-3">
+                <span class="badge bg-primary me-2">Shopify</span>
+                <span class="badge bg-dark me-2">PHP</span>
+                <span class="badge bg-success me-2">Trello API</span>
+                <span class="badge bg-secondary me-2">Cron Jobs</span>
+                <span class="badge bg-warning text-dark">Automation</span>
+            </div>
+
+            <div class="mt-4">
+                <a href="https://www.mypetprints.co/" target="_blank"
+                   class="btn btn-professional me-3">
+                    View Live Store
+                </a>
+            </div>
+        </div>
+
     </div>
+</section>
 
-    <section class="hero">
-      <h1>MyPetPrints – Artwork Approval Automation System</h1>
-      <p class="sub">
-        An automated workflow system that connects Shopify orders with a custom admin web app, Trello, Pabbly workflows,
-        webhooks, and cron jobs to manage artwork upload, approval, revisions, reminders, and escalation rules.
-      </p>
+<!-- Project Details -->
+<section class="section-padding">
+    <div class="container">
 
-      <div class="badges">
-        <span class="badge">Shopify</span>
-        <span class="badge">PHP</span>
-        <span class="badge">MySQL</span>
-        <span class="badge">Trello API</span>
-        <span class="badge">Webhooks</span>
-        <span class="badge">Pabbly</span>
-        <span class="badge">Cron Jobs</span>
-        <span class="badge">Email Automation</span>
-      </div>
-
-      <div class="links">
-        <!-- Replace the # with your real repo link once created -->
-        <a class="btn" href="#" target="_blank" rel="noreferrer">View GitHub Repo</a>
-        <!-- Optional: If you want, you can link the live store/app -->
-        <a class="btn" href="https://www.mypetprints.co/" target="_blank" rel="noreferrer">Live Store</a>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h2>What I Built</h2>
-          <ul>
-            <li>Shopify order webhook → inserts order into admin web app and triggers Trello card creation.</li>
-            <li>Automated Trello list movement based on customer actions (approve / revise / no-reply).</li>
-            <li>Customer portal flow: login using order number + email, approve artwork, request revisions, select background.</li>
-            <li>Reminder + escalation logic: repeat emails at intervals, auto-approve after time window.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Automation Logic</h2>
-          <ul>
-            <li>Cron jobs run every ~5 minutes to fetch cards and sync artwork status.</li>
-            <li>If artwork is missing: auto-upload + send customer approval email.</li>
-            <li>If customer doesn’t respond within the defined window: auto-approve and/or move to <b>No Reply</b>.</li>
-            <li>Revision requests add comments to Trello + move card into <b>Revision Request</b> list.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Tech Stack</h2>
-          <ul>
-            <li>Backend: PHP + MySQL (custom admin web app)</li>
-            <li>Integrations: Shopify Webhooks, Trello API</li>
-            <li>Automation: Pabbly workflows + cron jobs</li>
-            <li>Notifications: automated email reminders</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Highlights / Outcomes</h2>
-          <ul>
-            <li>Reduced manual effort by automating card creation, file sync, and follow-ups.</li>
-            <li>Clear approval pipeline: Pending → Approved / Revised / Rejected / No Reply.</li>
-            <li>Scalable workflow design for multi-order processing.</li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="footer">
-        <div class="mt-3">
-            <a class="btn btn-outline-light" 
-            href="https://github.com/mukeshprajapat026/mypetprints-case-study" 
-            target="_blank">
-            View Architecture & Case Study
-            </a>
-            <p class="text-muted mt-2">
-                Production source code is private due to client confidentiality.
+        <!-- Overview -->
+        <div class="mb-5">
+            <h3 class="fw-bold">Project Overview</h3>
+            <p class="text-muted">
+                The client was manually managing artwork approvals via email and Trello,
+                causing delays and operational inefficiencies. I built a fully automated
+                workflow system connecting Shopify orders with a custom admin panel,
+                Trello boards, and scheduled automation processes.
             </p>
         </div>
-      </p>
-    </section> 
-  </div>
+
+        <div class="row g-4">
+
+            <!-- What I Built -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold">What I Built</h5>
+                    <ul class="mt-3">
+                        <li>Shopify webhook → auto-create admin records</li>
+                        <li>Trello card automation & list movement</li>
+                        <li>Customer approval portal (order + email login)</li>
+                        <li>Reminder & escalation logic system</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Automation Logic -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold">Automation Logic</h5>
+                    <ul class="mt-3">
+                        <li>Cron jobs every 5 minutes</li>
+                        <li>Auto email approvals</li>
+                        <li>No-response → escalation workflow</li>
+                        <li>Revision sync with Trello API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Business Impact -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold">Business Impact</h5>
+                    <ul class="mt-3">
+                        <li>Reduced manual workload by ~60%</li>
+                        <li>Improved artwork approval turnaround time</li>
+                        <li>Automated 100+ order workflows</li>
+                        <li>Scalable multi-order processing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold">Tech Stack</h5>
+                    <ul class="mt-3">
+                        <li>Backend: PHP + MySQL</li>
+                        <li>Shopify Webhooks</li>
+                        <li>Trello API</li>
+                        <li>Cron Jobs & Email Automation</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="/index.html#contact" class="btn btn-professional btn-lg">
+                Discuss Similar Automation Project
+            </a>
+        </div>
+
+        <p class="text-muted text-center mt-3">
+            Production source code is private due to client confidentiality.
+        </p>
+
+    </div>
+</section>
+
+<!-- Footer Include -->
+<div id="footer"></div>
+
+<!-- JS -->
+<script src="/assets/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
