@@ -1,0 +1,29 @@
+body {
+    scroll-behavior: smooth;
+}
+.hero {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: white;
+    padding: 120px 0;
+}
+.hero h1 {
+    line-height: 1.2;
+}
+.hero img {
+    max-height: 400px;
+}
+.section-padding {
+    padding: 80px 0;
+}
+.service-card {
+    transition: 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 20px 0;
+}
