@@ -58,3 +58,9 @@ body {
     color: #aaa;
     padding: 20px 0;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
