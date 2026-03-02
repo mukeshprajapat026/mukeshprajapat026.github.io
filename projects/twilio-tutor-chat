@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OrderFlo Case Study | Mukesh Prajapat</title>
+    <title>Twilio Tutor Chat Case Study | Mukesh Prajapat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap -->
@@ -28,26 +28,27 @@
 
         <div class="mt-4">
             <h1 class="fw-bold">
-                OrderFlo – Shopify Customer Approval SaaS
+                Twilio Tutor-Student Communication Platform
             </h1>
 
             <p class="lead text-muted mt-3">
-                Event-driven SaaS platform integrating Shopify webhooks to automate
-                order sync, customer design approval, and fulfillment workflow.
+                Secure SMS-based communication system enabling tutors to interact 
+                with assigned students using Twilio number masking while ensuring 
+                complete privacy and real-time message updates.
             </p>
 
             <div class="mt-3">
-                <span class="badge bg-success me-2">Shopify Webhooks</span>
                 <span class="badge bg-danger me-2">Laravel</span>
-                <span class="badge bg-primary me-2">SaaS Architecture</span>
-                <span class="badge bg-dark me-2">Multi-Tenant</span>
-                <span class="badge bg-warning text-dark">Automation</span>
+                <span class="badge bg-primary me-2">Twilio API</span>
+                <span class="badge bg-dark me-2">Role-Based Access</span>
+                <span class="badge bg-success me-2">Real-Time Chat</span>
+                <span class="badge bg-warning text-dark">Privacy Architecture</span>
             </div>
 
             <div class="mt-4">
-                <a href="https://github.com/mukeshprajapat026/orderflo-case-study"
-                   target="_blank"
-                   class="btn btn-professional me-3">
+                <a href="https://github.com/mukeshprajapat026/twilio-tutor-communication-case-study"
+                target="_blank"
+                class="btn btn-professional me-3">
                     View Case Study Repo
                 </a>
             </div>
@@ -64,10 +65,11 @@
         <div class="mb-5">
             <h3 class="fw-bold">Project Overview</h3>
             <p class="text-muted">
-                OrderFlo was built to eliminate manual artwork approval processes
-                in print-on-demand Shopify stores. The system automatically creates
-                orders using Shopify order webhooks and manages the entire design
-                approval lifecycle before fulfillment begins.
+                This platform was developed to enable secure and private SMS-based 
+                communication between tutors and students. Tutors can only message 
+                their assigned students without accessing personal contact details. 
+                The system integrates Twilio APIs for number masking and Laravel 
+                broadcasting for real-time chat updates.
             </p>
         </div>
 
@@ -78,36 +80,36 @@
                 <div class="card shadow-sm p-4 h-100">
                     <h5 class="fw-bold">What I Built</h5>
                     <ul class="mt-3">
-                        <li>Shopify webhook → automatic order creation</li>
-                        <li>Multi-tenant SaaS store architecture</li>
-                        <li>Customer design approval portal</li>
-                        <li>Status-based workflow engine</li>
+                        <li>Secure Twilio SMS integration with number masking</li>
+                        <li>Role-based access system (Admin & Tutor)</li>
+                        <li>Tutor-student assignment logic</li>
+                        <li>Centralized admin monitoring dashboard</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Automation Logic -->
+            <!-- Real-Time System -->
             <div class="col-lg-6">
                 <div class="card shadow-sm p-4 h-100">
-                    <h5 class="fw-bold">Automation Logic</h5>
+                    <h5 class="fw-bold">Real-Time System</h5>
                     <ul class="mt-3">
-                        <li>Secure webhook signature verification</li>
-                        <li>Order state machine (Pending → Approved → Fulfillment)</li>
-                        <li>Email & SMS approval notifications</li>
-                        <li>Automatic fulfillment trigger after approval</li>
+                        <li>Laravel event broadcasting for live updates</li>
+                        <li>Instant SMS and in-app notifications</li>
+                        <li>Message logging and conversation history</li>
+                        <li>Optimized database structure for chat scalability</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Business Impact -->
+            <!-- Challenges & Solutions -->
             <div class="col-lg-6">
                 <div class="card shadow-sm p-4 h-100">
-                    <h5 class="fw-bold">Business Impact</h5>
+                    <h5 class="fw-bold">Challenges & Solutions</h5>
                     <ul class="mt-3">
-                        <li>Eliminated manual order imports</li>
-                        <li>Reduced approval delays significantly</li>
-                        <li>Minimized production errors</li>
-                        <li>Improved operational efficiency</li>
+                        <li><strong>Privacy Challenge:</strong> Protected student phone numbers using Twilio proxy number masking.</li>
+                        <li><strong>Real-Time Updates:</strong> Implemented Laravel broadcasting to eliminate page reloads.</li>
+                        <li><strong>Access Control:</strong> Designed strict role-based authorization middleware.</li>
+                        <li><strong>Integration:</strong> Seamlessly aligned with existing Shopify-based workflow.</li>
                     </ul>
                 </div>
             </div>
@@ -118,10 +120,10 @@
                     <h5 class="fw-bold">Tech Stack</h5>
                     <ul class="mt-3">
                         <li>Backend: Laravel 9 + MySQL</li>
-                        <li>Shopify Webhooks API</li>
+                        <li>Twilio SMS & Proxy API</li>
+                        <li>Bootstrap 5 + JavaScript</li>
+                        <li>Event Broadcasting & Queue System</li>
                         <li>REST API Architecture</li>
-                        <li>SMTP + Twilio SMS Integration</li>
-                        <li>Subscription & Plan Logic</li>
                     </ul>
                 </div>
             </div>
@@ -130,12 +132,12 @@
 
         <div class="text-center mt-5">
             <a href="/index.html#contact" class="btn btn-professional btn-lg">
-                Discuss Shopify Automation Project
+                Discuss Communication Platform Project
             </a>
         </div>
 
         <p class="text-muted text-center mt-3">
-            Production source code is private due to SaaS intellectual property.
+            Source code is private due to client confidentiality and privacy compliance requirements.
         </p>
 
     </div>
