@@ -65,6 +65,12 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
+.footer-keywords{
+    font-size:14px;
+    opacity:0.8;
+    margin-top:8px;
+}
+
 @media (max-width: 768px) {
 
     .hero-buttons .btn {
