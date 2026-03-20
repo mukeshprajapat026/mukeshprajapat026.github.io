@@ -39,22 +39,40 @@ body {
     padding: 120px 0 20px;
 }
 .hero {
-    background: radial-gradient(circle at top right, rgba(59,130,246,0.15), transparent 40%),
+    background: radial-gradient(circle at right, rgba(59,130,246,0.15), transparent 40%),
                 linear-gradient(135deg, #0f172a, #1e293b);
 }
 .hero h1 {
     line-height: 1.2;
 }
-.hero img {
-    max-height: 400px;
-}
-.hero img {
-    box-shadow: 0 20px 60px rgba(59,130,246,0.25);
-    transition: 0.3s ease;
+.hero-image {
+    height: 460px; /* adjust 420–500px */
+    width: 100%;
+    position: relative;
 }
 
-.hero img:hover {
-    transform: scale(1.02);
+.hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Optional glow effect */
+.hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: radial-gradient(circle, rgba(59,130,246,0.2), transparent 70%);
+    z-index: -1;
 }
 .hero p {
     max-width: 500px;
@@ -123,7 +141,10 @@ body {
     -webkit-text-fill-color: transparent;
 }
 @media (max-width: 768px) {
-
+    .hero-image {
+        height: 280px;
+        margin-top: 20px;
+    }
     .hero-buttons .btn {
         width: 100%;
         margin-bottom: 10px;
