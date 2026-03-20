@@ -83,11 +83,23 @@ body {
     color:#fff;
 }
 
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 768px) {
 
     .hero-buttons .btn {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .floating-cta {
+        display: none;
     }
 
 }
