@@ -724,27 +724,29 @@
                             </div>
 
                             <!-- FORM -->
-                            <form action="https://formsubmit.co/developer.expert.026@gmail.com" method="POST">
+                            <form id="contactForm" action="https://formsubmit.co/developer.expert.026@gmail.com" method="POST">
 
                                 <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value=""> <!-- prevents redirect -->
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Project Type">
+                                    <input type="text" name="subject" class="form-control" placeholder="Project Type">
                                 </div>
 
                                 <div class="mb-3">
-                                    <textarea class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
                                 </div>
 
-                                <button class="btn contact-btn w-100">
+                                <button type="submit" class="btn contact-btn w-100">
                                     🚀 Get Free Consultation
                                 </button>
 
@@ -753,6 +755,8 @@
                                 </p>
 
                             </form>
+
+                            <div id="formMessage" class="mt-3 text-center"></div>
 
                         </div>
 
