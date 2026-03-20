@@ -38,11 +38,26 @@ body {
     color: white;
     padding: 120px 0 20px;
 }
+.hero {
+    background: radial-gradient(circle at top right, rgba(59,130,246,0.15), transparent 40%),
+                linear-gradient(135deg, #0f172a, #1e293b);
+}
 .hero h1 {
     line-height: 1.2;
 }
 .hero img {
     max-height: 400px;
+}
+.hero img {
+    box-shadow: 0 20px 60px rgba(59,130,246,0.25);
+    transition: 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.02);
+}
+.hero p {
+    max-width: 500px;
 }
 .section-padding {
     padding: 40px 0;
@@ -101,6 +116,11 @@ body {
 }
 .section-padding {
     border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media (max-width: 768px) {
 
