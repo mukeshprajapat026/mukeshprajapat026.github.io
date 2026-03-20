@@ -39,16 +39,40 @@ body {
     padding: 120px 0 20px;
 }
 .hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.hero {
     background: radial-gradient(circle at 80% 20%, rgba(59,130,246,0.2), transparent 40%),
                 linear-gradient(135deg, #0f172a, #1e293b);
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(15,23,42,0.9), transparent);
+    pointer-events: none;
 }
 .hero h1 {
     line-height: 1.2;
 }
 .hero-image {
-    height: 500px; /* adjust 420–500px */
-    width: 100%;
-    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-height: 520px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
 }
 .hero-image::before {
     content: "";
@@ -60,17 +84,6 @@ body {
     background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 60%);
     filter: blur(40px);
     z-index: -1;
-}
-
-.hero-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-    transition: all 0.4s ease;
-    border-radius: 0; /* reduce */
-    transform: perspective(1000px) rotateY(-5deg);
-    filter: brightness(1.05) contrast(1.05);
 }
 
 /* Hover effect */
