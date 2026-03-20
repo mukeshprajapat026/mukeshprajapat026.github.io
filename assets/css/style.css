@@ -33,76 +33,37 @@ body {
 .nav-link:hover {
     color: #0d6efd !important;
 }
+
 .hero {
-    background: linear-gradient(135deg, #0d1b2a, #1b263b);
-    color: white;
-    padding: 120px 0 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    padding: 100px 0;
 }
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-}
-.hero {
-    background: radial-gradient(circle at 80% 20%, rgba(59,130,246,0.2), transparent 40%),
-                linear-gradient(135deg, #0f172a, #1e293b);
-}
-.hero::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(15,23,42,0.9), transparent);
-    pointer-events: none;
-}
+
 .hero h1 {
     line-height: 1.2;
 }
-.hero-image {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.hero-image img {
-    max-height: 520px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 0;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-}
-.hero-image::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 60%);
-    filter: blur(40px);
-    z-index: -1;
-}
-
-/* Hover effect */
-.hero-image img:hover {
-    transform: scale(1.03);
-}
-
-/* Optional glow effect */
-.hero-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 16px;
-    background: radial-gradient(circle, rgba(59,130,246,0.2), transparent 70%);
-    z-index: -1;
-}
 .hero p {
     max-width: 500px;
 }
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Image */
+.hero-img {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
 .section-padding {
     padding: 40px 0;
 }
@@ -167,8 +128,13 @@ body {
     -webkit-text-fill-color: transparent;
 }
 @media (max-width: 768px) {
-    .hero-image {
-        height: 280px;
+    .hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-img {
+        max-width: 100%;
         margin-top: 20px;
     }
     .hero-buttons .btn {
