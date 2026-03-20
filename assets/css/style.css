@@ -181,6 +181,42 @@ form textarea:focus {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(59,130,246,0.4);
 }
+/* Social Buttons */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Individual Colors */
+.social-btn.linkedin {
+    background: #0a66c2;
+}
+
+.social-btn.github {
+    background: #333;
+}
+
+.social-btn.upwork {
+    background: #14a800;
+}
+
+.social-btn.freelancer {
+    background: #0077ff;
+}
+
+/* Hover */
+.social-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
 @media (max-width: 768px) {
 
     .hero-buttons .btn {
