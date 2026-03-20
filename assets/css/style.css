@@ -91,7 +91,17 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
+.card {
+    transition: all 0.3s ease;
+}
 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+.section-padding {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
 @media (max-width: 768px) {
 
     .hero-buttons .btn {
@@ -99,7 +109,10 @@ body {
         margin-bottom: 10px;
     }
     .floating-cta {
-        display: none;
+        bottom: 20px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 14px;
     }
 
 }
